@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://walter789dev.github.io/advice-generator-app-main/)
+- Live Site URL: [Advice Generator App](https://walter789dev.github.io/advice-generator-app-main/)
 
 ### Built with
 
