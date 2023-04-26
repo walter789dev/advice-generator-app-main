@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![src/assets/images/screenshot.png]
+![Proyect](./src/assets/images/screenshot.png)
 
 ### Links
 
