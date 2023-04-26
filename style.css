@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+   --light-cyan: hsl(193, 38%, 86%);
+   --neon-green: hsl(150, 100%, 66%);
+   --grayish-blue: hsl(217, 19%, 38%);
+   --dark-grayish-blue: hsl(217, 19%, 24%);
+   --dark-blue: hsl(218, 23%, 16%);
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: var(--dark-blue);
+}
+
+.contenedor{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+   max-width: 600px;
+   height: 48%;
+   max-height: 320px;
+   border-radius: 20px;
+   background-color: var(--dark-grayish-blue);
+   font-family: Manrope;
+   color: var(--light-cyan);
+}
+
+.modal__numb{
+   padding: 30px 0px;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   color: var(--neon-green);
+}
+
+.modal__numb, .modal__cite{
+   text-align: center;
+}
+
+.modal__cite{
+   position: relative;
+   top: -20px;
+   margin: 0px 18px;
+   font-size: clamp(1rem, .7rem + 3vw, 1.5rem);
+   padding: 10px 0px;
+}
+
+.modal__icon{
+   position: absolute;
+   bottom: 23%;
+   width: 85%;
+}
+
+.modal__azar{
+   position: relative;
+   top: 30px;
+   width: 70px;
+   height: 70px;
+   border: none;
+   border-radius: 50%;
+   background-color: var(--neon-green);
+   cursor: pointer;
+   transition: background-color .5s, box-shadow .5s ease-in-out;
+}
+
+.modal__azar:disabled{
+   background-color: hsl(150, 67%, 25%);
+   cursor: not-allowed;
+}
+
+.modal__azar-icon{
+   width: 30px;
+}
+
+
+@media (min-width: 1024px) {
+   .modal__azar:hover{
+      box-shadow: -2px 5px 30px 4px var(--neon-green);
+   }
+   .modal__azar:disabled:hover{
+      box-shadow: -2px 5px 30px 4px hsl(150, 67%, 25%) ;
+   }
+}
